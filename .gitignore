@@ -1,3 +1,4 @@
 models/
 data/cleaned/
 __pycache__
+.vscode
