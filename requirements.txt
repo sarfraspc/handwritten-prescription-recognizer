@@ -1,5 +1,8 @@
+
 tensorflow
 numpy<2.0
 pandas
 scikit-learn
 opencv-python-headless
+fastapi
+uvicorn[standard]
