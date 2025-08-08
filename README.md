@@ -23,11 +23,11 @@ This is especially useful for:
 ```bash
 prescription_ocr/
 ├── data/
-│   ├── raw/                  # Unprocessed original data
+│   ├── raw/                  
 │   │   ├── Training/
 │   │   ├── Validation/
 │   │   └── Testing/
-│   └── processed/            # Cleaned images and encoded labels
+│   └── processed/           
 │       ├── Training/
 │       ├── Validation/
 │       └── Testing/
@@ -35,36 +35,36 @@ prescription_ocr/
 │       └── train.csv / val.csv / test.csv
 │
 ├── notebooks/
-│   └── eda.ipynb             # Exploratory Data Analysis
+│   └── eda.ipynb             
 │
 ├── scripts/
-│   ├── clean_images.py       # Runs image cleaning pipeline
-│   ├── clean_val.py          # Cleans validation data
-│   ├── clean_test.py         # Cleans test data
-│   └── train_model.py        # Entry point for training the model
+│   ├── clean_images.py       
+│   ├── clean_val.py         
+│   ├── clean_test.py        
+│   └── train_model.py      
 │
 ├── src/
 │   ├── preprocessing/
-│   │   ├── image_preprocessing.py     # Image cleaning & resizing
-│   │   ├── text_preprocessing.py      # Label encoding, char mapping
+│   │   ├── image_preprocessing.py    
+│   │   ├── text_preprocessing.py  
 │   │   └── __init__.py
 │   ├── models/
-│   │   └── crnn_ctc_model.py          # CNN + RNN + CTC model definition
+│   │   └── crnn_ctc_model.py          
 │   ├── training/
-│   │   └── train_utils.py             # Loss, optimizer, training loop
+│   │   └── train_utils.py           
 │   ├── inference/
-│   │   └── predictor.py               # Load model & predict text from image
+│   │   └── predictor.py      
 │   └── utils/
-│       └── helpers.py                 # Helper functions
+│       └── helpers.py                
 │
 ├── tests/
-│   └── test_pipeline.py       # Unit tests for preprocessing/model/inference
+│   └── test_pipeline.py       
 │
 ├── app/
-│   └── main.py                # FastAPI app for serving model predictions
+│   └── main.py               
 │
 ├── logs/
-│   └── train.log              # Training logs
+│   └── train.log              
 │
 ├── requirements.txt
 ├── README.md
